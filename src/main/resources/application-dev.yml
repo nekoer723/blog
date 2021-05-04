@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://106.52.120.30:3306/blog?useUnicode=true&characterEncoding=utf-8&useSSL=FALSE&serverTimezone=UTC&rewriteBatchedStatements=true
+    username: root
+    password: wxjxw7023
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.wxj: debug
+  file:
+    name: log/blog-dev.log
+
